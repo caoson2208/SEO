@@ -1,6 +1,7 @@
 /* ---------------------------------------------
                 Header
 --------------------------------------------- */
+
 .header {
   background: var(--primary-color);
   padding: 24px 0;
@@ -62,13 +63,13 @@
 
 .navbar .navbar-item .navbar-link.active::after {
   position: absolute;
-  width: 20px;
+  width: 42px;
   height: 2px;
   background-color: var(--blue-color);
   content: "";
   left: 50%;
   bottom: 0px;
-  transform: translateX(-10px);
+  transform: translateX(-50%);
 }
 
 .navbar .blue-btn .navbar-link {
@@ -77,6 +78,7 @@
   border-radius: 23px;
   letter-spacing: 0.25px;
   border-bottom: 2px solid var(--white-color) !important;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -84,6 +86,22 @@
   background: var(--white-color) !important;
   color: var(--blue-color) !important;
   border-bottom: 2px solid var(--blue-color) !important;
+}
+
+/* Navbar on mobile - tablet */
+label.navbar-btn {
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 1.6rem;
+}
+
+label.navbar-btn > i {
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+
+label.navbar-btn > i:hover {
+  transform: rotate(180deg);
 }
 
 /* ---------------------------------------------

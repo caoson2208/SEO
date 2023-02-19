@@ -52,6 +52,7 @@ ul {
   letter-spacing: 0.25px;
   border-bottom: 2px solid var(--blue-color) !important;
   transition: all linear 0.3s;
+  cursor: pointer;
 }
 
 .green-btn a:hover {

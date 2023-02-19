@@ -14,6 +14,35 @@
     display: none !important;
   }
 
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-list {
+    max-height: 0;
+  }
+
+  .navbar-list {
+    width: 100vw;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar-input:checked ~ .navbar-list {
+    max-height: 100%;
+    display: block !important;
+  }
+
+  .navbar-list .navbar-item:first-child {
+    border-top: 1px solid var(--white-color);
+  }
+
+  .navbar .navbar-item:last-child {
+    margin: 4px 0 0 0;
+  }
+
   .features-content .col {
     margin-top: 50px;
     padding: 0 16px;
